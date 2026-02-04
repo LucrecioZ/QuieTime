@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- SPLASH -->
+    <style name="Theme.QuieTime.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/qt_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/qt_primary</item>
+        <item name="postSplashScreenTheme">@style/Theme.QuieTime</item>
+    </style>
+
+    <!-- TEMA PRINCIPAL -->
+    <style name="Theme.QuieTime" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+    </style>
+
+
+
+</resources>

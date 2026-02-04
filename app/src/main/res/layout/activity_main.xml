@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo_full"
+            android:contentDescription="QuietTime"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/qt_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dias da semana"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- multiple selection habilitada -->
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="false"
+                    app:selectionRequired="false"
+                    app:chipSpacingHorizontal="8dp"
+                    app:chipSpacingVertical="4dp">
+
+                    <!-- Chips checkable -->
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSeg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEG"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipTer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TER"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipQua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QUA"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipQui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QUI"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEX"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAB"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipDom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOM"
+                        android:checkable="true"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg_selector"
+                        app:chipStrokeColor="@color/qt_primary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horário de início"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="24dp" />
+
+                <TimePicker
+                    android:id="@+id/timeInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horário de fim"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="16dp" />
+
+                <TimePicker
+                    android:id="@+id/timeFim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAgendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Ativar QuieTime"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/qt_primary"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

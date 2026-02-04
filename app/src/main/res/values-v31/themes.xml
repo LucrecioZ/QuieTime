@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="Theme.QuieTime.Splash" parent="Theme.SplashScreen">
+
+        <item name="android:windowSplashScreenBackground">
+            @color/qt_primary
+        </item>
+
+        <item name="android:windowSplashScreenAnimatedIcon">
+            @drawable/ic_splash_logo
+        </item>
+
+        <item name="android:windowSplashScreenIconBackgroundColor">
+            @color/qt_primary
+        </item>
+
+        <item name="postSplashScreenTheme">
+            @style/Theme.QuieTime
+        </item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuieTime</string>
+    <string name="title_app">QuieTime</string>
+    <string name="start_time">Horário de início</string>
+    <string name="end_time">Horário de fim</string>
+    <string name="btn_activate">Ativar QuieTime</string>
+    <string name="btn_activated">Ativado</string>
+</resources>

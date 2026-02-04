@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="qt_primary">#4DA3FF</color>      <!-- azul principal -->
+    <color name="qt_secondary">#A7CFFF</color>    <!-- azul claro -->
+    <color name="qt_success">#4CAF50</color>
+
+    <color name="colorPrimary">@color/qt_primary</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+    <color name="colorSecondary">@color/qt_secondary</color>
+    <color name="colorOnSecondary">@color/black</color>
+
+    <color name="colorBackground">#EAF3FF</color>
+    <color name="colorOnBackground">@color/black</color>
+
+    <color name="colorSurface">@color/white</color>
+    <color name="colorOnSurface">@color/black</color>
+    <color name="qt_bg">#EAF3FF</color> <!-- azul clarinho -->
+    <color name="qt_card">#FFFFFF</color>
+    <color name="qt_text">#1F2937</color> <!-- cinza escuro -->
+    <!-- Chips -->
+    <color name="qt_chip_bg">#E3F2FD</color>          <!-- azul clarinho -->
+    <color name="qt_chip_bg_checked">#ADD8E6</color>  <!-- azul selecionado -->
+    <color name="qt_chip_text">#1F2937</color>
+    <color name="qt_chip_text_checked">#0D47A1</color>
+
+
+</resources>
